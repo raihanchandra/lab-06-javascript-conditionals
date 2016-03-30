@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var number = prompt("Please enter a number")
+
+//9876
+var thoumod = number%1000 // 876
+var hunmod = thoumod%100 // 76
+var tenmod = hunmod%10 // 6
+var onemod = tenmod%1 // 0
+console.log((number - thoumod)/1000 + " thousands")
+console.log((thoumod - hunmod)/100 + " hundreds")
+console.log((hunmod - tenmod)/10 + " tens")
+console.log((tenmod - onemod)/1 + " ones")
+</script>
+</body>
+</html>
